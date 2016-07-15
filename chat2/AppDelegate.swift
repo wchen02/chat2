@@ -12,9 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+//    var layerClient:LYRClient
+    var appId = "layer:///apps/staging/8ef0d846-3189-11e6-8ca8-2f691d0f52c4";
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // Initializes a LYRClient object
+        var appID = NSURL(string: appId);
+        //self.layerClient =  [LYRClient clientWithAppID:appID];
+        
+//        // Tells LYRClient to establish a connection with the Layer service
+//        [self.layerClient connectWithCompletion:^(BOOL success, NSError *error) {
+//        if (success) {
+//        NSLog(@"Client is Connected!");
+//        }
+//        }];
+
+        
         // Override point for customization after application launch.
         return true
     }

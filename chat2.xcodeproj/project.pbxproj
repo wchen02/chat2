@@ -14,7 +14,8 @@
 		2CE7DCCB1D399559009A144D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7DCC91D399559009A144D /* LaunchScreen.storyboard */; };
 		2CE7DCD61D399559009A144D /* chat2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7DCD51D399559009A144D /* chat2Tests.swift */; };
 		2CE7DCE11D399559009A144D /* chat2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7DCE01D399559009A144D /* chat2UITests.swift */; };
-		2CE7DCF01D399A8B009A144D /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7DCEF1D399A8B009A144D /* ConversationViewController.swift */; };
+		2CE7DCF21D399CCA009A144D /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE7DCF11D399CCA009A144D /* config.plist */; };
+		2CE7DCF61D399E81009A144D /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7DCF51D399E81009A144D /* ConversationViewController.swift */; };
 		2DB252DBDE518AF8A99EA2B7 /* Pods_chat2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EE44F4E3D59333D99F416 /* Pods_chat2UITests.framework */; };
 		CD78699F70990370BA3C63FA /* Pods_chat2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD2746AA69CC9D80285B1EA /* Pods_chat2Tests.framework */; };
 		FEC7B5F13491AAF1FE8C5116 /* Pods_chat2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81C6868ABFC0FA1094329B3 /* Pods_chat2.framework */; };
@@ -53,7 +54,8 @@
 		2CE7DCE01D399559009A144D /* chat2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat2UITests.swift; sourceTree = "<group>"; };
 		2CE7DCE21D399559009A144D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CE7DCEE1D3999D8009A144D /* chat2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chat2-Bridging-Header.h"; sourceTree = "<group>"; };
-		2CE7DCEF1D399A8B009A144D /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		2CE7DCF11D399CCA009A144D /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		2CE7DCF51D399E81009A144D /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		42B47DB6729591EC237D49C8 /* Pods-chat2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat2Tests/Pods-chat2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F8B24EF646B4D89E012315E /* Pods-chat2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat2Tests/Pods-chat2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5CAEAF4D281555ECF611F9BC /* Pods-chat2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat2/Pods-chat2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,14 +119,15 @@
 		2CE7DCBF1D399559009A144D /* chat2 */ = {
 			isa = PBXGroup;
 			children = (
+				2CE7DCF41D399DAB009A144D /* Views */,
+				2CE7DCF31D399D3C009A144D /* Controllers */,
 				2CE7DCC01D399559009A144D /* AppDelegate.swift */,
-				2CE7DCC21D399559009A144D /* ViewController.swift */,
 				2CE7DCC41D399559009A144D /* Main.storyboard */,
 				2CE7DCC71D399559009A144D /* Assets.xcassets */,
 				2CE7DCC91D399559009A144D /* LaunchScreen.storyboard */,
 				2CE7DCCC1D399559009A144D /* Info.plist */,
 				2CE7DCEE1D3999D8009A144D /* chat2-Bridging-Header.h */,
-				2CE7DCEF1D399A8B009A144D /* ConversationViewController.swift */,
+				2CE7DCF11D399CCA009A144D /* config.plist */,
 			);
 			path = chat2;
 			sourceTree = "<group>";
@@ -145,6 +148,22 @@
 				2CE7DCE21D399559009A144D /* Info.plist */,
 			);
 			path = chat2UITests;
+			sourceTree = "<group>";
+		};
+		2CE7DCF31D399D3C009A144D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE7DCF51D399E81009A144D /* ConversationViewController.swift */,
+				2CE7DCC21D399559009A144D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CE7DCF41D399DAB009A144D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3C78CB19904DAF24FB5C1A35 /* Pods */ = {
@@ -282,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE7DCF21D399CCA009A144D /* config.plist in Resources */,
 				2CE7DCCB1D399559009A144D /* LaunchScreen.storyboard in Resources */,
 				2CE7DCC81D399559009A144D /* Assets.xcassets in Resources */,
 				2CE7DCC61D399559009A144D /* Main.storyboard in Resources */,
@@ -434,7 +454,7 @@
 			files = (
 				2CE7DCC31D399559009A144D /* ViewController.swift in Sources */,
 				2CE7DCC11D399559009A144D /* AppDelegate.swift in Sources */,
-				2CE7DCF01D399A8B009A144D /* ConversationViewController.swift in Sources */,
+				2CE7DCF61D399E81009A144D /* ConversationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
